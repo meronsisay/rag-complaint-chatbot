@@ -1,0 +1,13 @@
+pandas
+numpy
+matplotlib
+seaborn
+ipykernel
+sentence-transformers
+langchain
+faiss-cpu
+chromadb
+gradio
+streamlit
+pytest
+black
