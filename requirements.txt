@@ -1,13 +1,33 @@
-pandas
-numpy
-matplotlib
-seaborn
-ipykernel
-sentence-transformers
-langchain
-faiss-cpu
-chromadb
-gradio
-streamlit
-pytest
-black
+# Data processing
+pandas>=1.5.0
+numpy>=1.24.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Jupyter
+ipykernel>=6.20.0
+
+# Machine Learning / Deep Learning
+torch>=2.4.0
+sentence-transformers>=2.2.0
+transformers>=4.30.0
+
+# RAG / Chunking
+langchain>=0.1.0
+langchain-text-splitters>=0.0.1
+faiss-cpu>=1.7.4
+chromadb>=0.4.0
+
+# Web UI
+gradio>=4.0.0
+streamlit>=1.28.0
+
+# Testing & Formatting
+pytest>=7.0.0
+black>=23.0.0
+
+# Additional
+scikit-learn>=1.2.0 
+tqdm>=4.65.0 
