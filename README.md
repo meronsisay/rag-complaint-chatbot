@@ -56,6 +56,35 @@ An intelligent complaint analysis system for CrediTrust Financial that transform
 - Both stores successfully refuse to fabricate information when context is insufficient
 - **Recommendation**: Use Custom Vector Store for UI deployment (better quality, lower memory)
 
+## Interactive Chat Interface
+
+### Overview
+A Gradio-based chat interface enabling natural language querying of complaint data with source attribution.
+
+### Features
+- Question input with streaming responses
+- Source attribution for verification
+- Suggested questions and clear chat functionality
+
+### User Interface
+
+<img src="screenshots/intial.png" width="600">
+*Initial interface with custom store*
+
+**Custom Vector Store (36,512 chunks)**
+
+<img src="screenshots/custom_vector_store.png" width="600">
+*Answer generation with sources*
+
+**Pre-built Vector Store (1.37M chunks)**
+
+<img src="screenshots/prebuilt_minimal.png" width="600">
+*Answer generation with sources*
+
+<img src="screenshots/prebuilt_with_source.png" width="600">
+*Source attribution display*
+
+
 ## Project Structure
 ```
 rag-complaint-chatbot/
@@ -72,6 +101,7 @@ rag-complaint-chatbot/
 │ └── rag_pipeline.py  # RAG retrieval & generation
 ├── vector_store/ # FAISS index & artifacts
 ├── tests/ # Unit tests
+├── app.py # interactive ui
 ├── requirements.txt
 └── README.md
 
@@ -111,6 +141,12 @@ python src/chunker.py
 
 # Run RAG Evaluation
 jupyter notebook notebooks/rag_evaluation.ipynb
+
+# Run the app
+python app.py
+
+# Open in browser
+http://127.0.0.1:7860
 
 # 8. Run Tests
 python -m pytest tests/ -v
