@@ -97,10 +97,11 @@ venv\Scripts\activate              # Windows
 
 pip install -r requirements.txt
 
-# 4. Set Hugging Face Token (for LLM API)
-export HF_TOKEN="your_token_here"  # Mac/Linux
-# or
-set HF_TOKEN=your_token_here       # Windows
+# Create .env file in project root
+echo "HF_TOKEN=your_token_here" > .env
+
+# Or manually create .env with:
+# HF_TOKEN=hf_xxxxxxxxxxxxxxxxxxxx
 
 # run eda and preprocessing
 jupyter notebook notebooks/eda.ipynb
