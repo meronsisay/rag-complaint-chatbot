@@ -9,5 +9,8 @@ vector_store/
 *.csv
 *.db
 .env
+*.env
+.env.local
+.env.*.local
 .vscode/
 *.ipynb_checkpoints/

@@ -13,10 +13,13 @@ ipykernel>=6.20.0
 torch>=2.4.0
 sentence-transformers>=2.2.0
 transformers>=4.30.0
+accelerate>=0.25.0       
+bitsandbytes>=0.41.0     
 
 # RAG / Chunking
 langchain>=0.1.0
 langchain-text-splitters>=0.0.1
+langchain-community>=0.0.10  
 faiss-cpu>=1.7.4
 chromadb>=0.4.0
 
@@ -30,4 +33,7 @@ black>=23.0.0
 
 # Additional
 scikit-learn>=1.2.0 
-tqdm>=4.65.0 
+tqdm>=4.65.0
+pyarrow>=14.0.0       
+huggingface-hub>=0.20.0
+python-dotenv>=1.0.0
