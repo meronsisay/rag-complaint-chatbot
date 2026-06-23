@@ -19,7 +19,7 @@ from src.rag_pipeline import RAGPipeline
 # CONFIGURATION
 # ============================================================================
 
-USE_PREBUILT = True
+USE_PREBUILT = False
 VECTOR_STORE_PATH = "vector_store" if not USE_PREBUILT else "data/processed/complaint_embeddings.parquet"
 
 # Initialize RAG pipeline
